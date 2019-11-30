@@ -1,0 +1,62 @@
+{
+  "name": "@stationspatiale/bomber-space",
+  "version": "0.0.0",
+  "description": "Bomberman in Space Station",
+  "main": "lib/index.js",
+  "homepage": "https://stationspatiale.com",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stationspatiale/bomber-space.git"
+  },
+  "keywords": [
+    "stationspatiale",
+    "bomberman",
+    "space",
+    "space station"
+  ],
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "node ./scripts/extractMessages.js --mode production && webpack --mode production",
+    "lint": "eslint ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/plugin-proposal-class-properties": "7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.4.3",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-transform-classes": "7.4.3",
+    "@babel/plugin-transform-runtime": "7.4.3",
+    "@babel/polyfill": "7.4.3",
+    "@babel/preset-env": "7.4.3",
+    "@babel/register": "7.4.0",
+    "babel-eslint": "10.0.3",
+    "babel-preset-airbnb": "3.2.1",
+    "babel-loader": "8.0.5",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "2.16.0",
+    "husky": "1.3.1",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "clean-webpack-plugin": "1.0.1",
+    "webpack-dev-server": "3.2.1",
+    "css-loader": "3.2.0",
+    "eslint-import-resolver-webpack": "0.11.0",
+    "webpack": "4.29.6",
+    "webpack-cli": "3.3.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/plugin-transform-classes": "7.4.3",
+    "@babel/preset-env": "7.4.3",
+    "babel-preset-airbnb": "3.2.1"
+  }
+}
