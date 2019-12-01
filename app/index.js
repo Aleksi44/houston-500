@@ -1,9 +1,7 @@
 /* eslint-disable global-require */
-/* eslint-disable no-underscore-dangle */
-import BomberSpace from '../lib';
+import Bomberman from '../lib/games/Bomberman/index';
 
-const bs = new BomberSpace({
-  // eslint-disable-next-line no-undef
-  canvas: document.getElementById('bomber-space'),
+const bomber = new Bomberman({
+  parent: 'bomber-space',
 });
-bs.runClassicGame();
+bomber.run();

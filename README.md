@@ -19,22 +19,3 @@ Test your code :
 ```sh
 $ yarn lint
 ```
-
-
-Usage
------------
-
-Run :
-```sh
-$ yarn add @stationspatiale/bomber-space
-```
-
-And use like this :
-```
-import BomberSpace from '@stationspatiale/bomber-space';
-
-let bs = new BomberSpace({
-  canvas: document.getElementById(id),
-});
-bs.runClassicGame();
-```
