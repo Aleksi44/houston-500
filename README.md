@@ -3,7 +3,9 @@ Bomber Space
 
 The official Bomber Space Game.
 
-###Getting started
+
+Getting started
+-----------
 
 Install deps :
 ```sh
@@ -18,7 +20,9 @@ Test your code :
 $ yarn lint
 ```
 
-###Usage
+
+Usage
+-----------
 
 Run :
 ```sh
@@ -32,5 +36,5 @@ import BomberSpace from '@stationspatiale/bomber-space';
 let bs = new BomberSpace({
   canvas: document.getElementById(id),
 });
-bs.runClassicGame
+bs.runClassicGame();
 ```
