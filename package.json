@@ -26,7 +26,8 @@
     }
   },
   "dependencies": {
-    "phaser": "3.21.0"
+    "phaser": "3.21.0",
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
