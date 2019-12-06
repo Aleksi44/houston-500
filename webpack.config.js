@@ -2,6 +2,7 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = ({ mode = 'development' } = {}) => {
   const isProductionBuild = mode === 'production';
@@ -11,6 +12,12 @@ module.exports = ({ mode = 'development' } = {}) => {
       template: './app/index.html',
       filename: './index.html',
     }),
+    new CopyWebpackPlugin(
+      [
+        { from: './app/assets', to: 'assets' },
+        { from: './lib/core/managers/assets', to: 'assets' },
+      ],
+    ),
   ];
 
   const productionPlugins = [
@@ -19,6 +26,7 @@ module.exports = ({ mode = 'development' } = {}) => {
 
   return {
     entry: {
+      polyfill: 'babel-polyfill',
       main: './app',
     },
     output: {
