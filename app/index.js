@@ -1,7 +1,6 @@
 /* eslint-disable global-require */
-import Bomberman from '../lib/games/Bomberman/index';
+import StationAstro from '../lib/games/StationAstro/index';
 
-const bomber = new Bomberman({
+new StationAstro({
   parent: 'bomber-space',
 });
-bomber.run();
