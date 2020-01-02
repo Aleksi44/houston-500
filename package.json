@@ -20,11 +20,6 @@
     "build": "node ./scripts/extractMessages.js --mode production && webpack --mode production",
     "lint": "eslint ."
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "yarn lint"
-    }
-  },
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "phaser": "3.21.0",
