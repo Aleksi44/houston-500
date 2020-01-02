@@ -1,0 +1,35 @@
+.generic {
+  font-family: "Saira Condensed", sans-serif;
+
+  h1, h2, h3, h4 {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 50px;
+    @media (max-width: $screen-xs-max) {
+      font-size: 40px;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    @media (max-width: $screen-xs-max) {
+      font-size: 30px;
+    }
+  }
+
+  h3 {
+    font-size: 30px;
+    @media (max-width: $screen-xs-max) {
+      font-size: 20px;
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+    @media (max-width: $screen-xs-max) {
+      font-size: 20px;
+    }
+  }
+}

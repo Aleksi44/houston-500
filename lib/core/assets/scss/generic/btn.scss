@@ -1,0 +1,86 @@
+.generic {
+  .base-btn {
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.5s;
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 100px;
+
+    max-width: 20em;
+    white-space: nowrap;
+    overflow: hidden;
+
+    > i {
+      margin-right: 5px;
+      text-align: center;
+      font-weight: 300;
+    }
+
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      text-decoration: none;
+      outline: 0;
+    }
+  }
+
+  .btn-lbn {
+    color: $my-1 !important;
+    background-color: $my-2;
+
+    &:hover {
+      color: $my-3 !important;
+    }
+  }
+
+  .btn-lbr {
+    color: $white !important;
+    background-color: $my-3;
+
+    &:hover {
+      color: $my-1 !important;
+    }
+  }
+
+  .btn-lbt {
+    color: $white !important;
+    background-color: $my-2;
+
+    &:hover {
+      color: $my-1 !important;
+    }
+  }
+
+  .btn-lbc {
+    color: $white !important;
+    background-color: $my-1;
+    border: 1px solid $white;
+
+    &:hover {
+      color: $my-2 !important;
+    }
+  }
+
+  .btn-lby {
+    color: $my-1 !important;
+    background-color: $my-4;
+
+    &:hover {
+      color: $my-1 !important;
+    }
+  }
+
+  .btn-size {
+
+    height: 40px;
+    padding: 0 30px;
+    display: inline-block;
+    line-height: 40px;
+  }
+}

@@ -1,5 +1,8 @@
 {
-  "extends": "airbnb-base",
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb-base"
+  ],
   "plugins": [
     "babel"
   ],

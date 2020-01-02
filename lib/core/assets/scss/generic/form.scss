@@ -1,0 +1,42 @@
+.generic {
+  form {
+    padding: 50px;
+    @media (max-width: $screen-sm-max) {
+      padding: 50px 0;
+    }
+
+    .w-form-group {
+      text-align: center;
+      margin: 15px 0;
+
+      label {
+        background: ghostwhite;
+        border-left: 4px $my-1 solid;
+
+        @media (max-width: $screen-sm-max) {
+          width: 100%;
+        }
+
+        input {
+          background: ghostwhite;
+          min-width: 300px;
+          margin-left: 20px;
+          border: 0;
+          height: 50px;
+
+          @media (max-width: $screen-sm-max) {
+            min-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    &.dark {
+      label {
+        border-left: 4px $my-2 solid;
+      }
+    }
+  }
+}

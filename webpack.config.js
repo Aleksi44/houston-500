@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = ({ mode = 'development' } = {}) => {
   const isProductionBuild = mode === 'production';
@@ -23,6 +24,19 @@ module.exports = ({ mode = 'development' } = {}) => {
 
   const productionPlugins = [
     new CleanWebpackPlugin(['build']),
+  ];
+  const devPlugins = [
+    new BrowserSyncPlugin({
+      proxy: 'localhost:8080',
+      port: 3009,
+      files: [
+        'app/**/*.css',
+        'app/**/*.js',
+        'app/**/*.html',
+      ],
+      reloadDelay: 0,
+      notify: false,
+    }),
   ];
 
   return {
@@ -64,11 +78,19 @@ module.exports = ({ mode = 'development' } = {}) => {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
+        {
+          test: /\.s[ac]ss$/i,
+          use: [
+            'style-loader',
+            'css-loader',
+            'sass-loader',
+          ],
+        },
       ],
     },
     plugins: [
       ...defaultPlugins,
-      ...isProductionBuild ? productionPlugins : [],
+      ...isProductionBuild ? productionPlugins : devPlugins,
     ],
     devtool: isProductionBuild ? 'source-map' : false,
     devServer: {
