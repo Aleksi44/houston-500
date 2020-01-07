@@ -1,5 +1,8 @@
 .generic {
   .classement {
+    overflow: auto;
+    max-height: 300px;
+
     .score {
       display: flex;
       justify-content: space-between;
