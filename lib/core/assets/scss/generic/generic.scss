@@ -4,6 +4,7 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   color: $my-3;
+  width: 300px;
 
   .hide-sm-xs {
     @media (max-width: $screen-sm-max) {
@@ -33,11 +34,8 @@
     padding-top: 20px;
   }
 
-  input, textarea {
-    -webkit-appearance: none !important;
-    -moz-appearance: none;
-    border: 0;
-    outline: none;
+  a {
+    cursor: pointer;
   }
 
   .w-cmy-0 {
@@ -61,7 +59,7 @@
     color: $my-4;
   }
 
-  .w-margin-10 {
-    margin: 10px;
+  .w-margin-20 {
+    margin: 20px;
   }
 }

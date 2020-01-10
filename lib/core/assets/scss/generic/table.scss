@@ -1,0 +1,61 @@
+.generic {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+
+    .first, .third {
+      width:20%;
+      text-align: center;
+    }
+
+    .second {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 60%;
+      max-width: 60%;
+      text-align: left;
+    }
+
+    thead {
+      .second {
+        text-align: center;
+      }
+    }
+  }
+
+  th {
+    color: $my-2;
+    font-weight: bold;
+  }
+
+  tr {
+    border-bottom: 1px solid $my-2;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  .ranking {
+    overflow: auto;
+    max-height: 240px;
+  }
+
+  .ranking-save {
+    margin: 20px 0;
+
+    tr {
+      border-bottom: none !important;
+    }
+  }
+
+  .ranking, .ranking-save {
+    background: $my-1;
+    border: 1px solid $my-2;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+  }
+}
