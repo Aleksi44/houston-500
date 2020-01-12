@@ -19,3 +19,7 @@ Test your code :
 ```sh
 $ yarn lint
 ```
+Extrude tiles
+```sh
+tile-extruder --tileWidth 16 --tileHeight 16 --input ./tiles_tmp.png --output ./tiles.png
+```
