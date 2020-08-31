@@ -1,0 +1,17 @@
+.generic {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $my-1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $my-2;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $my-2;
+  }
+}

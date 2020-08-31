@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb-base"
+  ],
+  "plugins": [
+    "babel"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "no-unused-expressions": 0,
+    "linebreak-style": 0
+  }
+}

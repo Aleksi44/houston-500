@@ -1,0 +1,32 @@
+//Media queries breakpoints
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+$screen-lg-med: 1260px !default;
+$screen-xs-max: ($screen-sm-min - 1) !default; // 767px
+$screen-sm-max: ($screen-md-min - 1) !default; // 991px
+$screen-md-max: ($screen-lg-min - 1) !default; // 1199px
+$zindex-navbar: 9995 !default;
+$header-height: 90px;
+$header_on-scroll-height: 90px;
+
+//Color
+$my-1: #121922;
+$my-2: #2FB196;
+$my-3: #FFFFFF;
+$my-4: #2DDDF5;
+$white: #FFF;
+
+//Import app
+@import 'app/index';
+
+//Import generic
+@import 'generic/btn';
+@import 'generic/form';
+@import 'generic/generic';
+@import 'generic/titles';
+@import 'generic/table';
+@import 'generic/scroll';
+@import 'generic/input';
+@import 'generic/svg';

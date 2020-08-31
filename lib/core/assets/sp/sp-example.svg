@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_46);
+      }
+
+      .cls-2 {
+        fill: url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_132);
+      }
+
+      .cls-3 {
+        fill: url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_60);
+      }
+    </style>
+    <linearGradient id="_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_46" data-name="¡ÂÁ˚ÏˇÌÌ˚È „‡‰ËÂÌÚ 46" y1="50" x2="100" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0.22" stop-color="#fff6db"/>
+      <stop offset="0.39" stop-color="#f9dfca"/>
+      <stop offset="0.8" stop-color="#edaca7"/>
+      <stop offset="1" stop-color="#e89999"/>
+    </linearGradient>
+    <linearGradient id="_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_132" data-name="¡ÂÁ˚ÏˇÌÌ˚È „‡‰ËÂÌÚ 132" x1="100" y1="50" x2="200" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0.38" stop-color="#22567d"/>
+      <stop offset="1" stop-color="#131f49"/>
+    </linearGradient>
+    <linearGradient id="_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_60" data-name="¡ÂÁ˚ÏˇÌÌ˚È „‡‰ËÂÌÚ 60" x1="200" y1="50" x2="300" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0.06" stop-color="#feaa0f"/>
+      <stop offset="0.23" stop-color="#faa413"/>
+      <stop offset="0.45" stop-color="#ef941e"/>
+      <stop offset="0.7" stop-color="#dc7830"/>
+      <stop offset="0.97" stop-color="#c35248"/>
+      <stop offset="1" stop-color="#bf4d4c"/>
+    </linearGradient>
+  </defs>
+  <title>Fichier 1</title>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Calque_1-2" data-name="Calque 1">
+      <rect class="cls-1" width="100" height="100" rx="50"/>
+      <rect class="cls-2" x="100" width="100" height="100" rx="50"/>
+      <rect class="cls-3" x="200" width="100" height="100" rx="50"/>
+    </g>
+  </g>
+</svg>

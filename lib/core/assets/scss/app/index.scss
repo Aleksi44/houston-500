@@ -1,0 +1,21 @@
+body, html {
+  background: #121922;
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+canvas {
+  box-shadow: 0 0 5px 1px #2FB196;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#bomber-html {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
